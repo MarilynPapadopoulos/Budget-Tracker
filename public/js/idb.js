@@ -32,8 +32,8 @@ function saveRecord(record) {
 
   // open a new transaction with the database with read and write permissions
   const transaction = db.transaction(["pending"], "readwrite");
-  console.log(db.transaction);
-  console.log(new_bidget);
+  //console.log(db.transaction);
+  //console.log(new_budget);
 
   // access the object store for `new_budget`
   const budgetObjectStore = transaction.objectStore("pending");
