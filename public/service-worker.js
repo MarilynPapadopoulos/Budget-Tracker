@@ -47,6 +47,7 @@ self.addEventListener('activate', function(e) {
     );
   });
   self.addEventListener('fetch', function(evt) {
+    console.log('Fetch intercepted for:', evt.request.url);
     if (evt.request.url.includes('/api/')) {
       evt.respondWith(
         caches
